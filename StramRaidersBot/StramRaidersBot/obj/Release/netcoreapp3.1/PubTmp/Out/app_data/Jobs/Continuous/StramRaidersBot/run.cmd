@@ -1,0 +1,1 @@
+dotnet StramRaidersBot.dll %*

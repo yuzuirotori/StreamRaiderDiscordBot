@@ -1,0 +1,14 @@
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Settings.job
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\StramRaidersBot.exe
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\StramRaidersBot.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\StramRaidersBot.deps.json
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\StramRaidersBot.runtimeconfig.json
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\StramRaidersBot.pdb
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Discord.Net.Commands.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Discord.Net.Core.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Discord.Net.Rest.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Discord.Net.Webhook.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Discord.Net.WebSocket.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\Newtonsoft.Json.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\System.Interactive.Async.dll
+C:\Users\kwj01\source\repos\StramRaidersBot\StramRaidersBot\obj\Release\netcoreapp3.1\PubTmp\Out\app_data\Jobs\Triggered\StramRaidersBot\System.Linq.Async.dll
