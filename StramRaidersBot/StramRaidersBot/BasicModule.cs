@@ -44,7 +44,7 @@ namespace StramRaidersBot
         public async Task AddHelpCommnad(params string[] stringArray)
         {
             string helpString = null;
-            helpString = "단타방 추가 방법\n!S(s) => Super Boss방 추가\n!B(b) => Boss방 추가\n!G(g) => Royalty Gold방 추가\n!T(t) => Royalty Token방 추가\n!K(k) => Royalty Skin방 추가\n각 명령어 뒤에 스트리머 / 남은시간(분 숫자만)";
+            helpString = "단타방 추가 방법\n!S(s) 스트리머이름 / 남은시간(분) => Super Boss방 추가\n!B(b) 스트리머이름 / 남은시간(분) => Boss방 추가\n!G(g) 스트리머이름 / 남은시간(분) => Loyalty Gold방 추가\n!T(t) 스트리머이름 / 남은시간(분) => Loyalty Token방 추가\n!K(k) 스트리머이름 / 남은시간(분) => Loyalty Skin방 추가";
             await Context.Channel.SendMessageAsync(helpString);
         }
 
@@ -69,7 +69,7 @@ namespace StramRaidersBot
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식 : 방이름 / 남은시간(숫자만) \nAdd Type : Room Name / Left Time(Only Integer minute)");
+                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식은 아래와 같습니다\n!명령어 방이름 / 남은시간(숫자만) \nAdd Type : !commnad Room Name / Left Time(Only Integer minute)");
             }
         }
 
@@ -94,7 +94,7 @@ namespace StramRaidersBot
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식 : 방이름 / 남은시간(숫자만) \nAdd Type : Room Name / Left Time(Only Integer minute)");
+                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식은 아래와 같습니다\n!명령어 방이름 / 남은시간(숫자만) \nAdd Type : !commnad Room Name / Left Time(Only Integer minute)");
             }
         }
 
@@ -119,7 +119,7 @@ namespace StramRaidersBot
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식 : 방이름 / 남은시간(숫자만) \nAdd Type : Room Name / Left Time(Only Integer minute)");
+                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식은 아래와 같습니다\n!명령어 방이름 / 남은시간(숫자만) \nAdd Type : !commnad Room Name / Left Time(Only Integer minute)");
             }
         }
 
@@ -144,7 +144,7 @@ namespace StramRaidersBot
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식 : 방이름 / 남은시간(숫자만) \nAdd Type : Room Name / Left Time(Only Integer minute)");
+                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식은 아래와 같습니다\n!명령어 방이름 / 남은시간(숫자만) \nAdd Type : !commnad Room Name / Left Time(Only Integer minute)");
             }
         }
 
@@ -169,7 +169,7 @@ namespace StramRaidersBot
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식 : 방이름 / 남은시간(숫자만) \nAdd Type : Room Name / Left Time(Only Integer minute)");
+                await Context.Channel.SendMessageAsync("잘못된 형식의 추가입니다.\nWrong Type To Add\n추가형식은 아래와 같습니다\n!명령어 방이름 / 남은시간(숫자만) \nAdd Type : !commnad Room Name / Left Time(Only Integer minute)");
             }
         }
 
@@ -240,7 +240,7 @@ namespace StramRaidersBot
             eb.Title = "단타방 시간표";
 
             //슈퍼 보스 일정 생성
-            foreach (var item in entities.FindAll(x=>x.RowKey.Equals("s")))
+            foreach (var item in entities.FindAll(x=>x.RowKey.Equals("LSB")))
             {
                 if (item.Timestamp.AddMinutes(item.leftTime) > DateTime.UtcNow)
                 {
@@ -251,7 +251,7 @@ namespace StramRaidersBot
 
             //보스 일정 생성
             roomInfo = "";
-            foreach (var item in entities.FindAll(x => x.RowKey.Equals("b")))
+            foreach (var item in entities.FindAll(x => x.RowKey.Equals("LB")))
             {
                 if (item.Timestamp.AddMinutes(item.leftTime) > DateTime.UtcNow)
                 {
@@ -262,14 +262,14 @@ namespace StramRaidersBot
 
             //골드방 일정 생성
             roomInfo = "";
-            foreach (var item in entities.FindAll(x => x.RowKey.Equals("g")))
+            foreach (var item in entities.FindAll(x => x.RowKey.Equals("")))
             {
                 if (item.Timestamp.AddMinutes(item.leftTime) > DateTime.UtcNow)
                 {
                     roomInfo += item.PartitionKey + " / " + item.Timestamp.AddHours(9).AddMinutes(item.leftTime).ToString("HH:mm") + "\n";
                 }
             }
-            eb.AddField("Royalty Gold", roomInfo == "" ? "일정이 없습니다." : roomInfo);
+            eb.AddField("Loyalty Gold", roomInfo == "" ? "일정이 없습니다." : roomInfo);
 
             //토큰방 일정 생성
             roomInfo = "";
@@ -280,7 +280,7 @@ namespace StramRaidersBot
                     roomInfo += item.PartitionKey + " / " + item.Timestamp.AddHours(9).AddMinutes(item.leftTime).ToString("HH:mm") + "\n";
                 }
             }
-            eb.AddField("Royalty Token", roomInfo == "" ? "일정이 없습니다." : roomInfo);
+            eb.AddField("Loyalty Token", roomInfo == "" ? "일정이 없습니다." : roomInfo);
 
             //스킨방 일정 생성
             roomInfo = "";
@@ -291,7 +291,18 @@ namespace StramRaidersBot
                     roomInfo += item.PartitionKey + " / " + item.Timestamp.AddHours(9).AddMinutes(item.leftTime).ToString("HH:mm") + "\n";
                 }
             }
-            eb.AddField("Royalty Skin", roomInfo == "" ? "일정이 없습니다." : roomInfo);
+            eb.AddField("Loyalty Skin", roomInfo == "" ? "일정이 없습니다." : roomInfo);
+
+            //스킨방 일정 생성
+            roomInfo = "";
+            foreach (var item in entities.FindAll(x => x.RowKey.Equals("G")))
+            {
+                if (item.Timestamp.AddMinutes(item.leftTime) > DateTime.UtcNow)
+                {
+                    roomInfo += item.PartitionKey + " / " + item.Timestamp.AddHours(9).AddMinutes(item.leftTime).ToString("HH:mm") + "\n";
+                }
+            }
+            eb.AddField("Loyalty Skin", roomInfo == "" ? "일정이 없습니다." : roomInfo);
 
             await Context.Channel.SendMessageAsync("", false, eb.Build());
 

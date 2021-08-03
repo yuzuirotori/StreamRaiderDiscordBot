@@ -6501,11 +6501,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kwj01\\source\\repos\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
+      "projectUniqueName": "C:\\Users\\kwj01\\git\\StreamRaiderDiscordBot\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
       "projectName": "StramRaidersBot",
-      "projectPath": "C:\\Users\\kwj01\\source\\repos\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
+      "projectPath": "C:\\Users\\kwj01\\git\\StreamRaiderDiscordBot\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
       "packagesPath": "C:\\Users\\kwj01\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kwj01\\source\\repos\\StramRaidersBot\\StramRaidersBot\\obj\\",
+      "outputPath": "C:\\Users\\kwj01\\git\\StreamRaiderDiscordBot\\StramRaidersBot\\StramRaidersBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kwj01\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6566,7 +6566,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

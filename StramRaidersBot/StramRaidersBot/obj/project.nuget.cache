@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SkVA9u3fry5N1bFQq3r2DxWsYyrVJpsRZjJIxmDn/5mDJbro+bMPpNj2iYR02Kixhai1pc27I0Y8nLX6unaTog==",
+  "dgSpecHash": "+eA/dedbyRsYX+1N0/XR+u7bVw6CFvM03zzoznjN+ZT07Gums2ltD+xEJWmXJq8X7no7Vmxc5IUegLjT4OIgoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kwj01\\source\\repos\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
+  "projectFilePath": "C:\\Users\\kwj01\\git\\StreamRaiderDiscordBot\\StramRaidersBot\\StramRaidersBot\\StramRaidersBot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kwj01\\.nuget\\packages\\azure.core\\1.8.1\\azure.core.1.8.1.nupkg.sha512",
     "C:\\Users\\kwj01\\.nuget\\packages\\azure.storage.common\\12.7.0\\azure.storage.common.12.7.0.nupkg.sha512",
